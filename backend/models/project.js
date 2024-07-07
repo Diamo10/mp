@@ -14,18 +14,6 @@ const projectSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    img1: {
-      type: String,
-    },
-    img2: {
-      type: String,
-    },
-    img3: {
-      type: String,
-    },
-    img4: {
-      type: String,
-    },
   },
   { timestamps: true }
 );
