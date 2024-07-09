@@ -1,11 +1,11 @@
 import express from "express";
+import path from "path";
 import multer from "multer";
 import Project from "../models/project.js";
 
 const router = express.Router();
 
-// Multer upload instance for handling files
-const upload = multer({ dest: "../uploads" });
+const upload = multer({ dest: "uploads/" });
 
 // Get all projects
 router.get("/", async (req, res) => {
