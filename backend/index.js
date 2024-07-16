@@ -11,6 +11,7 @@ connectDB();
 
 app.use("/api/project", projectController);
 console.log("hello world");
+console.log("working on branch");
 
 app.listen(process.env.PORT, () => {
   console.log("listening on port " + process.env.PORT);
