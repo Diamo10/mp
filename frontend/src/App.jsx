@@ -15,13 +15,19 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
 <<<<<<< HEAD
+<<<<<<< HEAD
         <Route path="/login" element={<Login />} />
 =======
+=======
+>>>>>>> a0b49ce75d61c4dd2afadbe0ef28d94aa586a388
 
         <Route path="/" element={<Login />} />
 
         <Route path="/register" element={<Signup />} />
 
+<<<<<<< HEAD
+>>>>>>> a0b49ce75d61c4dd2afadbe0ef28d94aa586a388
+=======
 >>>>>>> a0b49ce75d61c4dd2afadbe0ef28d94aa586a388
         <Route path="*" element={<NotFound />} />
       </Routes>
