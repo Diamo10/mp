@@ -2,9 +2,9 @@ import React from "react";
 
 const Button = (props) => {
   return (
-    <div className="bg-red-400 w-fit p-4 rounded-md">
+    <div className="bg-white w-fit p-2 rounded-md">
       <button
-        className="text-white font-semibold hover:font-extrabold"
+        className="text-primary font-semibold hover:font-bold "
         onClick={props.click}
       >
         {props.name}
