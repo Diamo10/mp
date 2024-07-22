@@ -1,6 +1,7 @@
 import React from "react";
 
 const Button = (props) => {
+  console.log("dasjkdkahk");
   return (
     <div className="bg-white w-fit p-2 rounded-md">
       <button
