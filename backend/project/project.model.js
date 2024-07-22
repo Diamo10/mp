@@ -22,20 +22,9 @@ const projectSchema = new mongoose.Schema(
       required: true,
       trim: true,
     },
-    like: {
-      type: Number,
-      required: true,
-      trim: true,
-    },
-    comment: {
-      type: String,
-      required: true,
-      trim: true,
-    },
     collaborator: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
-      required: true,
       trim: true,
     },
     uploadeder: {

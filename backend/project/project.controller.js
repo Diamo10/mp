@@ -29,7 +29,9 @@ router.get("/:id", isValidUser, async (req, res) => {
 router.post("/", isValidUser, async (req, res) => {
   try {
     const project = req.body;
+    const uploader = req.user;
     const newProject = new Project(project);
+    newProject.uploadeder = uploader._id;
     await newProject.save();
     return res
       .status(200)
@@ -53,7 +55,7 @@ router.put("/edit/:id", isValidUser, async (req, res) => {
     }
     return res
       .status(200)
-      .send({ message: "Project edited successfully", updatedProject });
+      .send({ message: "Project edited successfully", updateProject });
   } catch (err) {
     console.log("Erroe in Getting data");
     console.log(err);
