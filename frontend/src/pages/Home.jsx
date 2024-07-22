@@ -23,7 +23,7 @@ const Home = () => {
           <Button2 name="Get Started" />
         </div>
       </div>
-      <div className="flex flex-col items-center ">
+      <div className="flex flex-col items-center m-12">
         {/* First Grid */}
         <div className="grid grid-cols-2 gap-16 p-8 mt-8  items-center justify-center">
           {/* text  */}
