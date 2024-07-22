@@ -5,6 +5,7 @@ import NotFound from "./pages/NotFound";
 import Signup from "./pages/Signup";
 
 const App = () => {
+  console.log("Hello World");
   return (
     <BrowserRouter>
       <Routes>
