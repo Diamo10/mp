@@ -18,7 +18,6 @@ const App = () => {
 
         <Route path="/register" element={<Signup />} />
         <Route path="/discover" element={<Discover />} />
-
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
