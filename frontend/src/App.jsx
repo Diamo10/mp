@@ -6,10 +6,9 @@ import NotFound from "./pages/NotFound";
 import Login from "./pages/Login";
 
 import Signup from "./pages/Signup";
-
+import Discover from "./pages/Discover";
 
 const App = () => {
-  console.log("Hello World");
   return (
     <BrowserRouter>
       <Routes>
@@ -21,9 +20,10 @@ const App = () => {
 =======
 >>>>>>> a0b49ce75d61c4dd2afadbe0ef28d94aa586a388
 
-        <Route path="/" element={<Login />} />
+        <Route path="/login" element={<Login />} />
 
         <Route path="/register" element={<Signup />} />
+        <Route path="/discover" element={<Discover />} />
 
 <<<<<<< HEAD
 >>>>>>> a0b49ce75d61c4dd2afadbe0ef28d94aa586a388
