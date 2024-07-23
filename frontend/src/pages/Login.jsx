@@ -1,17 +1,9 @@
-<<<<<<< HEAD
-import React from "react";
-import { Formik } from "formik";
-import TextField from "@mui/material/TextField";
-import Button2 from "./../(components)/Button2";
-import * as Yup from "yup";
-=======
 import React, { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import Button2 from "../(components)/Button2";
 
 import Logo from "../(components)/Logo";
 import { useNavigate } from "react-router-dom";
->>>>>>> 20f5fb39525efa98938907e9cf6dfda30c876a4b
 
 const Login = () => {
   const navigate = useNavigate();
@@ -64,43 +56,6 @@ const Login = () => {
     }
   };
   return (
-<<<<<<< HEAD
-    <Formik
-      initialValues={{ email: "", password: "" }}
-      validationSchema={Yup.object({
-        email: Yup.string().email("Invalid email address").required("Required"),
-        password: Yup.string().required("Required"),
-      })}
-      onSubmit={(values) => {
-        console.log(values);
-      }}
-    >
-      {(formik) => (
-        <form
-          onSubmit={formik.handleSubmit}
-          className="flex flex-col  gap-5 items-center shadow-lg w-[50%] justify-center m-auto mt-[250px]"
-        >
-          <div>
-            <TextField
-              id="outlined-basic"
-              label="email"
-              variant="outlined"
-              {...formik.getFieldProps("email")}
-            />
-          </div>
-          <div>
-            <TextField
-              id="outlined-basic"
-              label="password"
-              variant="outlined"
-              {...formik.getFieldProps("password")}
-            />
-          </div>
-          <Button2 type="submit" name="Login" />
-        </form>
-      )}
-    </Formik>
-=======
     <div>
       <section className="bg-gray-50 dark:bg-gray-900">
         <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
@@ -176,7 +131,6 @@ const Login = () => {
       ;
       <Toaster />
     </div>
->>>>>>> 20f5fb39525efa98938907e9cf6dfda30c876a4b
   );
 };
 export default Login;
